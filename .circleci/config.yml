@@ -8,10 +8,10 @@ jobs:
       - checkout
       - run: echo $CIRCLE_JOB
       - run:
-        name: Single command - echo
-        command: echo $CIRCLE_USERNAME
+         name: Single command - echo
+         command: echo $CIRCLE_USERNAME
       - run:
-        name: Muti-line commands - echo & echo
-        command: |
-          echo $CIRCLE_REPOSITORY_URL
-          echo $CIRCLE_BRANCH
+         name: Multi-line commands - echo & echo
+         command: |
+           echo $CIRCLE_REPOSITORY_URL
+           echo $CIRCLE_BRANCH
